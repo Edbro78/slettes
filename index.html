@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Space Invaders</title>
+    <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <div id="game-container">
+            <!-- Game UI -->
+            <div id="game-ui">
+                <div>SCORE: <span id="score-value">0000</span></div>
+                <div>LIVES: <span id="lives-value">❤️❤️❤️</span></div>
+            </div>
+
+            <!-- Game elements will be added by JavaScript -->
+            <div id="player"></div>
+
+            <!-- Screens -->
+            <div id="start-screen" class="screen">
+                <h1 class="title">SPACE INVADERS</h1>
+                <button id="start-button" class="button">Start Game</button>
+            </div>
+            <div id="game-over-screen" class="screen" style="display: none;">
+                <h1 class="title">GAME OVER</h1>
+                <button id="play-again-button" class="button">Play Again</button>
+            </div>
+             <div id="win-screen" class="screen" style="display: none;">
+                <h1 class="title">YOU WIN!</h1>
+                <button id="win-play-again-button" class="button">Play Again</button>
+            </div>
+        </div>
+        <p class="instructions">Use Arrow Keys to Move, Spacebar to Shoot</p>
+    </div>
+    <script src="script.js"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

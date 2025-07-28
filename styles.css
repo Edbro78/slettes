@@ -1,0 +1,126 @@
+body {
+    background-color: #000;
+    color: #22c55e;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #000;
+    border: 2px solid #166534; /* border-green-700 */
+    box-shadow: 0 0 20px 5px rgba(34, 197, 94, 0.2);
+    overflow: hidden;
+}
+
+#game-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem; /* text-lg */
+    color: white;
+    z-index: 10;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #4ade80; /* bg-green-400 */
+}
+
+.invader {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.player-bullet {
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #86efac; /* bg-green-300 */
+}
+
+.invader-bullet {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color: #ef4444; /* bg-red-500 */
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 20;
+}
+
+.title {
+    font-size: 3.75rem; /* text-6xl */
+    font-weight: 700;
+    margin-bottom: 2rem;
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+.button {
+    background-color: #15803d; /* bg-green-700 */
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-bottom: 4px solid #14532d; /* border-green-900 */
+    border-radius: 0.25rem;
+    font-size: 1.5rem; /* text-2xl */
+    transition: all 0.15s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #16a34a; /* hover:bg-green-600 */
+    border-bottom-color: #166534; /* hover:border-green-700 */
+    transform: scale(1.05);
+}
+
+.instructions {
+    margin-top: 1rem;
+    font-size: 0.75rem; /* text-xs */
+    color: #6b7280; /* text-gray-500 */
+}
