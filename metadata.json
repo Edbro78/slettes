@@ -1,6 +1,0 @@
-{
-  "name": "Investment Forecast Calculator",
-  "description": "A sophisticated financial calculator to forecast investment growth over time. Users can set initial portfolio size, contributions, and various economic assumptions to visualize their financial future through interactive charts.",
-  "requestFramePermissions": [],
-  "prompt": ""
-}
