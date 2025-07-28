@@ -1,0 +1,5 @@
+{
+  "name": "Classic Space Invaders",
+  "description": "A classic arcade game, Space Invaders, recreated using React and Tailwind CSS. Defend your territory from the descending alien horde!",
+  "requestFramePermissions": []
+}
